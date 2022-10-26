@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
+@ToString(exclude = "name") //숨겨야할 정보가있다면 제외가능
 @Table(name = "product")
 //테이블어노테이션 클래스의 이름과 테이블의 이름을 다르게 지정해야하는경우사용
 //명시하지않으면 이름이 동일하다는 의미.
